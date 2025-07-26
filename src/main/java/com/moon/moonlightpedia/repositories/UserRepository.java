@@ -1,7 +1,7 @@
-package com.moon.moonlightpedia.entities;
+package com.moon.moonlightpedia.repositories;
 
-import org.apache.catalina.User;
+import com.moon.moonlightpedia.entities.User;
 import org.springframework.data.repository.CrudRepository;
 
-public interface UserRepository  {
+public interface UserRepository extends CrudRepository<User, Long> {
 }
