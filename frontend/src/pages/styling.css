@@ -1,0 +1,86 @@
+/* Show vertical scrollbar only when needed, hide if not needed */
+html, body {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* Hide scrollbar if not needed (for Webkit browsers) */
+body:not(:has(> *:last-child:only-child))::-webkit-scrollbar {
+  display: none;
+}
+/* Footer styles */
+.footer {
+  width: 100%;
+  min-height: 32px;
+  background-image: url('../assets/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.footer-caption {
+  color: #4263EB;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+.dashboard-bg {
+  background: #F8FAFC;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.dashboard-breadcrumb {
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+.dashboard-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.dashboard-card {
+  background: linear-gradient(90deg, #1A1F4B 60%, rgba(26,31,75,0.7) 100%);
+  border-radius: 10px;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  min-height: 180px;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+.dashboard-card-content {
+  flex: 1;
+}
+
+.dashboard-card-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.dashboard-card-desc {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  max-width: 600px;
+}
+
+.dashboard-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
