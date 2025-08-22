@@ -9,6 +9,7 @@ public class MessageController {
 
     @RequestMapping("/hello")
     public Message sayHello(){
+        System.out.println("Render here");
         return new Message("Hello World") ;
     }
 }
